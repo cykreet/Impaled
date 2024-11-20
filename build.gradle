@@ -1,10 +1,7 @@
 plugins {
-	id 'fabric-loom' version "1.4-SNAPSHOT"
-	id 'io.github.ladysnake.chenille' version '0.11.3'
+	id 'fabric-loom' version "1.8-SNAPSHOT"
+	id 'io.github.ladysnake.chenille' version '0.14.0'
 }
-
-sourceCompatibility = JavaVersion.VERSION_17
-targetCompatibility = JavaVersion.VERSION_17
 
 archivesBaseName = project.archives_base_name
 version = project.mod_version
@@ -93,6 +90,8 @@ processResources {
 }
 
 java {
+	sourceCompatibility = JavaVersion.VERSION_17
+	targetCompatibility = JavaVersion.VERSION_17
 	withSourcesJar()
 }
 
